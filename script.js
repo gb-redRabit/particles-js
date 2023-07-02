@@ -1,11 +1,11 @@
 let options = {
     idCanvas: "canvas", // id Canvas 
-    bgCanvas: 'rgba(255,0,0,1)', //kolor tła
+    bgCanvas: 'rgba(11,8,61,1)', //kolor tła
     colorParticle: 'rgba(255,255,255,1)', // kolor cząsteczeki
     colorConnect: '255,255,255', // kolor kreski miedży cząsteczkami w rgb podawac w taki sposób
-    numberOfParticles: (innerHeight * innerHeight) / 7000, // ilość cząsteczek
-    sizeMin: 1, // minimalny rozmiar cząsteczeki
-    sizeMax: 4, // maxymalny rozmiar cząsteczeki
+    numberOfParticles: (innerHeight * innerHeight) / 6000, // ilość cząsteczek
+    sizeMin: 1.00, // minimalny rozmiar cząsteczeki
+    sizeMax: 2.00, // maxymalny rozmiar cząsteczeki
     lineWidthConnect: 1, // gubość lini miedzy cząsteczkami
     speed: 1, // mnożnik prędkości cząsteczek
     mouseMove: true, // właczenie pola myszki 
@@ -23,6 +23,8 @@ let mouse = {
     x: null,
     y: null,
     radius: ((canvas.height / 97) * (canvas.width / 97)) * options.mouseArea,
+    
+
 }
 window.addEventListener('mousemove',
     (e) => {
@@ -78,6 +80,7 @@ class Particle {
                 }
             }
         }
+
         this.x += this.directionX * options.speed;
         this.y += this.directionY * options.speed;
 
