@@ -67,7 +67,7 @@ Projekt jest dostępny na licencji **MIT**. Więcej informacji znajdziesz w plik
 
 ## 💡 Autor
 
-Projekt został stworzony przez [gb-redRabit](https://github.com/gb-redRabit). Zapraszam do kontaktu i współpracy!
+Projekt został stworzony przez [gb-redRabit](https://github.com/gb-redRabit)
 
 ---
 
